@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitria Vuspita Dewi - Portfolio</title>
+    <meta name="description" content="Portfolio website of Fitria Vuspita Dewi - Frontend Developer & UI/UX Designer" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <h3>Loading Portfolio...</h3>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2><span class="logo-icon">🎨</span>Fitria Vuspita Dewi</h2>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+          <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+          <li><a href="#certificates" class="nav-link" data-text="Certificates">Certificates</a></li>
+          <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="floating-elements">
+          <div class="floating-element" style="--delay: 0s"></div>
+          <div class="floating-element" style="--delay: 2s"></div>
+          <div class="floating-element" style="--delay: 4s"></div>
+          <div class="floating-element" style="--delay: 1s"></div>
+          <div class="floating-element" style="--delay: 3s"></div>
+        </div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content" data-aos="fade-right">
+          <div class="hero-badge">
+            <span>👋 Hello there!</span>
+          </div>
+          <h1 class="hero-title">I'm <span class="gradient-text typing-text">Fitria Vuspita Dewi</span></h1>
+          <h2 class="hero-subtitle">
+            <span class="role-text">Frontend Developer</span> &
+            <span class="role-text">UI/UX Designer</span>
+          </h2>
+          <p class="hero-description">Crafting beautiful digital experiences with clean code and innovative design. Passionate about turning ideas into reality through modern web technologies.</p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Clients</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i>
+              <span>View My Work</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-message"></i>
+              <span>Get In Touch</span>
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="#" class="social-link" data-tooltip="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/fitriavd" class="social-link" data-tooltip="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/fitriavd_/" class="social-link" data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" data-tooltip="Dribbble">
+              <i class="fab fa-dribbble"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+          <div class="profile-card">
+            <div class="profile-img">
+              <div class="profile-avatar">
+                <img src="images/profile.jpg" alt="Fitria Vuspita Dewi" class="profile-avatar-img" />
+                <div class="profile-ring"></div>
+                <div class="profile-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="profile-info">
+              <h3>Frontend Developer</h3>
+              <p>Available for work</p>
+              <div class="profile-status">
+                <span class="status-dot"></span>
+                Online
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="scroll-indicator" tabindex="0" style="cursor: pointer">
+        <div class="scroll-text">Scroll down</div>
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Passionate developer with a creative mindset</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <div class="about-intro">
+              <h3>Hello! I'm <span class="highlight">Fitria Vuspita Dewi</span></h3>
+              <p class="about-desc">
+                I'm a passionate Frontend Developer and UI/UX Designer based in Bogor, Indonesia. With over 3 years of experience in creating digital solutions, I specialize in building responsive
+                websites and intuitive user interfaces.
+              </p>
+              <p class="about-desc">
+                I believe in the power of clean code, beautiful design, and seamless user experience. My goal is to bridge the gap between design and development to create products that are not only
+                visually appealing but also highly functional.
+              </p>
+            </div>
+
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bogor, Indonesia</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Bachelor's in Information Systems</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-code"></i>
+                <span>3+ Years Experience</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-cookie-bite"></i>
+                <span>Butterscotch Milk Crumble Enthusiast</span>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="documents/Fitria_Vuspita_Dewi_CV.pdf" download="Fitria_Vuspita_Dewi_CV.pdf" class="btn btn-primary">
+                <i class="fas fa-download"></i>
+                Download CV
+              </a>
+            </div>
+          </div>
+
+          <div class="about-visual" data-aos="fade-left">
+            <div class="about-card">
+              <div class="card-header">
+                <div class="card-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="card-title">developer.js</span>
+              </div>
+              <div class="card-content">
+                <div class="code-line">
+                  <span class="code-keyword">const</span>
+                  <span class="code-variable">developer</span> = {
+                </div>
+                <div class="code-line indent">
+                  <span class="code-property">name:</span>
+                  <span class="code-string">"Fitria"</span>,
+                </div>
+                <div class="code-line indent"><span class="code-property">skills:</span> [ <span class="code-string">"React"</span>, <span class="code-string">"JS"</span>],</div>
+                <div class="code-line indent">
+                  <span class="code-property">passion:</span>
+                  <span class="code-string">"Creating amazing UX"</span>
+                </div>
+                <div class="code-line">};</div>
+              </div>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-icon">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <h4 class="stat-number" data-count="50">0</h4>
+                <p class="stat-label">Projects Completed</p>
+              </div>
+              <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <h4 class="stat-number" data-count="3">0</h4>
+                <p class="stat-label">Years Experience</p>
+              </div>
+              <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-icon">
+                  <i class="fas fa-smile"></i>
+                </div>
+                <h4 class="stat-number" data-count="25">0</h4>
+                <p class="stat-label">Happy Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">What I do</span>
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="category-title">
+              <i class="fas fa-code"></i>
+              Frontend Development
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon html">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>HTML5</h4>
+                  <p>Semantic markup</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="95"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon css">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>CSS3</h4>
+                  <p>Advanced styling</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="90"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon js">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>JavaScript</h4>
+                  <p>ES6+ & Frameworks</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="85"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon react">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>React</h4>
+                  <p>Component-based UI</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="category-title">
+              <i class="fas fa-paint-brush"></i>
+              Design & Tools
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon figma">
+                  <i class="fab fa-figma"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Figma</h4>
+                  <p>UI/UX Design</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="90"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon mobile">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Responsive</h4>
+                  <p>Mobile-first design</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="88"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon git">
+                  <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Git</h4>
+                  <p>Version control</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="75"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon sass">
+                  <i class="fab fa-sass"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Sass/SCSS</h4>
+                  <p>CSS preprocessor</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="82"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="category-title">
+              <i class="fas fa-server"></i>
+              Backend Development
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon php">
+                  <i class="fab fa-php"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>PHP</h4>
+                  <p>Server-side scripting</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="85"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon laravel">
+                  <i class="fab fa-laravel"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Laravel</h4>
+                  <p>PHP Framework</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="80"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon node">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Node.js</h4>
+                  <p>JavaScript runtime</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="70"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon api">
+                  <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>REST API</h4>
+                  <p>API Development</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="78"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="category-title">
+              <i class="fas fa-database"></i>
+              Database & Analytics
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon mysql">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>MySQL</h4>
+                  <p>Relational Database</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="88"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon analytics">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Data Analysis</h4>
+                  <p>Business Intelligence</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="85"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon excel">
+                  <i class="fas fa-table"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Excel</h4>
+                  <p>Advanced formulas</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="90"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon system">
+                  <i class="fas fa-sitemap"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>System Design</h4>
+                  <p>Information Architecture</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="82"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="500">
+            <h3 class="category-title">
+              <i class="fas fa-users"></i>
+              Soft Skills
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon teamwork">
+                  <i class="fas fa-handshake"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Teamwork</h4>
+                  <p>Collaborative mindset</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="92"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon problem">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Problem Solving</h4>
+                  <p>Analytical thinking</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="88"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon communication">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Communication</h4>
+                  <p>Clear & effective</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="85"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon learning">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Fast Learning</h4>
+                  <p>Adaptable & curious</p>
+                  <div class="skill-level">
+                    <div class="skill-bar" data-level="90"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Achievements</span>
+          <h2 class="section-title">Certificates</h2>
+          <p class="section-subtitle">Professional certifications and recognitions</p>
+        </div>
+        <div class="certificates-list">
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+            <div class="certificate-info">
+              <h4>Certificate Of Competence Data Analyst</h4>
+              <p class="certificate-org">BNSP</p>
+              <span class="certificate-year">2025</span>
+            </div>
+          </div>
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+            <div class="certificate-info">
+              <h4>Certificate Of Competence Software Engineering</h4>
+              <p class="certificate-org">PT. 7SKY GLOBAL SOLUTION</p>
+              <span class="certificate-year">2021</span>
+            </div>
+          </div>
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+            <div class="certificate-info">
+              <h4>Certificate Of Competence Programming and Software Development</h4>
+              <p class="certificate-org">BNSP</p>
+              <span class="certificate-year">2021</span>
+            </div>
+          </div>
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+            <div class="certificate-info">
+              <h4>Certificate Of Competence Basic Android Programming</h4>
+              <p class="certificate-org">TUNAS.SOLUTION</p>
+              <span class="certificate-year">2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Recent work and achievements</p>
+        </div>
+
+        <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web App</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Skripsi Project: Sistem Informasi Akademik Ra Al-Furqon -->
+          <div class="project-card web" data-aos="fade-up" data-aos-delay="125">
+            <div class="project-image">
+              <img
+                src="images/sia-alfurqon.png"
+                alt="Sistem Informasi Akademik Ra Al-Furqon Screenshot"
+                class="project-screenshot"
+                style="width: 100%; border-radius: 1rem; margin-bottom: 0.5rem; object-fit: cover; max-height: 180px"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon school">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Fullstack Web Application</div>
+              <h3>Sistem Informasi Akademik Ra Al-Furqon</h3>
+              <p>Aplikasi fullstack untuk membantu sekolah dalam mengelola data akademik, administrasi, dan pelaporan secara digital.</p>
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>Tailwind CSS</span>
+                <span>Vite</span>
+                <span>AdminLTE</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  2025
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  Skripsi
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card web" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon ecommerce">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Web Application</div>
+              <h3>E-Commerce Platform</h3>
+              <p>A modern e-commerce website with shopping cart functionality, payment integration, and admin dashboard.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Stripe</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  Dec 2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  3 months
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Civies Company Profile Project -->
+          <div class="project-card web" data-aos="fade-up" data-aos-delay="130">
+            <div class="project-image">
+              <img
+                src="images/civies-profile.png"
+                alt="Civies Company Profile Screenshot"
+                class="project-screenshot"
+                style="width: 100%; border-radius: 1rem; margin-bottom: 0.5rem; object-fit: cover; max-height: 180px"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon catalog">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Company Profile / Product Catalog</div>
+              <h3>Website Civies Parfum</h3>
+              <p>Website company profile dan katalog produk untuk memperkenalkan dan mempromosikan parfum Civies.</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  college project
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Hidden Projects for Load More -->
+          <div class="project-card web hidden-project" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon ecommerce">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Web Application</div>
+              <h3>E-Commerce Platform</h3>
+              <p>A modern e-commerce website with shopping cart functionality, payment integration, and admin dashboard.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Stripe</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  Dec 2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  3 months
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Covid-19 Tracker Project -->
+          <div class="project-card web hidden-project" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image">
+              <img
+                src="images/covid19-tracker.png"
+                alt="Covid-19 Tracker Screenshot"
+                class="project-screenshot"
+                style="width: 100%; border-radius: 1rem; margin-bottom: 0.5rem; object-fit: cover; max-height: 180px"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://fitriavd.github.io/Covid19-Tracker/" target="_blank" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon covid">
+                <i class="fas fa-virus"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Web Application</div>
+              <h3>Covid-19 Tracker</h3>
+              <p>Website untuk memantau data kasus Covid-19 secara real-time di berbagai negara. Fitur: pencarian negara, statistik kasus, update harian, dan UI modern.</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>API</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  Hacktiv8 Project
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card mobile hidden-project" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon task">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge in-progress">In Progress</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Mobile App</div>
+              <h3>Task Management App</h3>
+              <p>A productivity app for managing tasks and projects with team collaboration features and real-time updates.</p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Firebase</span>
+                <span>PWA</span>
+                <span>WebSocket</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  Jan 2024
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  2 months
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card web hidden-project" data-aos="fade-up" data-aos-delay="500">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon analytics">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Dashboard</div>
+              <h3>Analytics Dashboard</h3>
+              <p>A comprehensive dashboard for data visualization and business intelligence with interactive charts.</p>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>D3.js</span>
+                <span>Chart.js</span>
+                <span>API</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  Nov 2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  1.5 months
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card design hidden-project" data-aos="fade-up" data-aos-delay="600">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Design">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="Figma File">
+                    <i class="fab fa-figma"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon portfolio">
+                <i class="fas fa-palette"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">UI/UX Design</div>
+              <h3>Portfolio Website Design</h3>
+              <p>Modern portfolio design with clean aesthetics and smooth user experience for a creative agency.</p>
+              <div class="project-tech">
+                <span>Figma</span>
+                <span>Prototyping</span>
+                <span>User Research</span>
+                <span>Wireframing</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  Oct 2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  3 weeks
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Hidden Projects for Load More -->
+          <div class="project-card web hidden-project" data-aos="fade-up" data-aos-delay="450">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon chat">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Web Application</div>
+              <h3>Real-Time Chat App</h3>
+              <p>Real-time chat application with user authentication, private messaging, group chats, and emoji support.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Socket.io</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  Mar 2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  2 months
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card mobile hidden-project" data-aos="fade-up" data-aos-delay="500">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Project">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="View Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon weather">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Mobile App</div>
+              <h3>Weather Forecast App</h3>
+              <p>Mobile weather app with 7-day forecast, location-based weather, and beautiful UI with animated weather icons.</p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>Weather API</span>
+                <span>Geolocation</span>
+                <span>Animations</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  Jun 2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  1 month
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card design hidden-project" data-aos="fade-up" data-aos-delay="550">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" data-tooltip="View Design">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" data-tooltip="Figma File">
+                    <i class="fab fa-figma"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-icon mobile-design">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="project-status">
+                <span class="status-badge completed">Completed</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">UI/UX Design</div>
+              <h3>Mobile Banking App Design</h3>
+              <p>Modern mobile banking app UI/UX design with intuitive navigation, security features, and clean aesthetics.</p>
+              <div class="project-tech">
+                <span>Figma</span>
+                <span>User Research</span>
+                <span>Prototyping</span>
+                <span>UI/UX</span>
+              </div>
+              <div class="project-meta">
+                <span class="project-date">
+                  <i class="fas fa-calendar"></i>
+                  Apr 2023
+                </span>
+                <span class="project-duration">
+                  <i class="fas fa-clock"></i>
+                  3 weeks
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-cta" data-aos="fade-up" data-aos-delay="500">
+          <p>Interested in seeing more of my work?</p>
+          <button id="loadMoreProjects" class="btn btn-outline">
+            <i class="fas fa-plus"></i>
+            <span class="load-more-text">Load More Projects</span>
+            <span class="load-less-text" style="display: none">Show Less</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Let's connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Ready to start your next project?</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-intro">
+              <h3>Let's discuss your project</h3>
+              <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, I'll get back to you!</p>
+            </div>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>fitriavuspita@gmail.com</p>
+                  <a href="mailto:fitriavuspita@gmail.com" class="contact-link">Send Email</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+62 815-1412-1056</p>
+                  <a href="tel:+6281514121056" class="contact-link">Call Now</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Bogor, Indonesia</p>
+                  <span class="contact-availability">Available for remote work</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <h4>Follow me on</h4>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/fitriavd/" class="social-link linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/fitriavd" class="social-link github">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.instagram.com/fitriavd_/" class="social-link instagram">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container" data-aos="fade-left">
+            <div class="form-header">
+              <h3>Send me a message</h3>
+              <p>Fill out the form below and I'll get back to you within 24 hours</p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                  <span class="form-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                  <span class="form-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="web-development">Web Development</option>
+                  <option value="ui-design">UI/UX Design</option>
+                  <option value="consultation">Consultation</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="newsletter" name="newsletter" />
+                  <span class="checkmark"></span>
+                  Subscribe to my newsletter for updates
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading">
+                  <i class="fas fa-spinner fa-spin"></i>
+                  Sending...
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-main">
+            <div class="footer-brand">
+              <h3>Fitria Vuspita Dewi</h3>
+              <p>Frontend Developer & UI/UX Designer passionate about creating beautiful digital experiences.</p>
+              <div class="footer-social">
+                <a href="https://www.linkedin.com/in/fitriavd/" class="social-link" data-tooltip="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/fitriavd" class="social-link" data-tooltip="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/fitriavd_/" class="social-link" data-tooltip="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" data-tooltip="Dribbble">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">UI/UX Design</a></li>
+                  <li><a href="#">Responsive Design</a></li>
+                  <li><a href="#">Consultation</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    fitriavuspita@gmail.com
+                  </li>
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    +62 815-1412-1056
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Bogor, Indonesia
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="footer-copyright">
+              <p>&copy; 2024 Fitria Vuspita Dewi. All rights reserved.</p>
+            </div>
+            <div class="footer-links-bottom">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <button id="backToTop" class="back-to-top" data-tooltip="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
